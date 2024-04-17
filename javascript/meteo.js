@@ -41,7 +41,7 @@ window.addEventListener('keydown', function(event) {
 
 
 function main(){ 
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=' + ville + '&exclude=&appid=bddb0cd04d55a5dd035c87ef8d4accb6&lang=fr&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + ville + '&exclude=&appid=bddb0cd04d55a5dd035c87ef8d4accb6&lang=fr&units=metric')
     .then(resultat => resultat.json())
     .then(json=> {
         console.log(json);
