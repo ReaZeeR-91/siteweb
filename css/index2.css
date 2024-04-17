@@ -1,0 +1,652 @@
+@font-face {
+    font-family: 'Martel Sans';
+    src: url("../font/MartelSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../font/Lato-Regular.ttf") format("truetype");
+}
+
+:root{
+    --text: #fff;
+    --background: #000417;
+    --paragraphe: #c1c1c1;
+    --buttonBlue: #2E318F;
+    --buttonBlueClaire: #2E318Fa5;
+    --textButton: #fff;
+    --fondChatNav: #0004177b;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    letter-spacing: 0.5px;
+    background: var(--background);
+}
+
+/* Nav bar */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    transition: all .5s;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    background-color: var(--fondChatNav);
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+}
+
+nav ul li a{
+    font-family: 'Martel Sans';
+    color: var(--textButton);
+    font-size: 16px;
+    position: relative;
+    padding: 0 5px;
+}
+
+nav ul li a:hover:before{
+    content: "";
+    position: absolute;
+    background-color: var(--textButton);
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+nav ul li a:before{
+    content: "";
+    position: absolute;
+    background-color: var(--textButton);
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    transition: all .3s;
+    border-radius: 10px;
+}
+
+.logo{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 80px;
+}
+
+.hidden{
+    top: -200px;
+}
+
+/* Fin Nav bar */
+
+/* Présentation */
+
+#container-presentation{
+    margin-bottom: 100px;
+}
+
+.sous-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20em;
+    padding-top: 100px;
+}
+
+.me{
+    height: 40em;
+}
+
+.titre{
+    color: var(--text);
+    font-family: 'Lato';
+    font-size: 4em;
+}
+
+.button1{
+    color: var(--background);
+    font-family: 'Martel Sans';
+    background-color: var(--buttonBlue);
+    margin-top: 15px;
+    border: 0;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0px 0px 20px var(--buttonBlue);
+}
+
+.button1:hover:after{
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: -2;
+    border-radius: 20px;
+}
+
+.button1:after{
+    content: "";
+    background-color: var(--text);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    transition: all .5s;
+    z-index: -1;
+}
+
+/* Fin Présentaion */
+
+/* À propos */
+
+#container-propos{
+    margin: 0 25em;
+    text-align: center;
+}
+
+.back-rect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.logo-propos{
+    height: 20em;
+}
+
+.paragraphe{
+    color: var(--paragraphe);
+    font-family: 'Martel Sans';
+    font-size: 16px;
+    text-align: justify;
+}
+
+.propos{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+.props{
+    margin-left: 50px;
+    position: relative;
+}
+
+.propos img{
+    height: 300px;
+}
+
+#container-propos h1{
+    font-family: 'Lato';
+    color: var(--text);
+    font-size: 2.5em;
+    position: relative;
+    display: inline;
+    bottom: 15px;
+    left: 5px;
+}
+
+#container-propos h1:before{
+    content: "";
+    background-color: var(--buttonBlueClaire);
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    z-index: -1;
+}
+
+/* Fin À propos */
+
+/* Service */
+
+#service{
+    text-align: center;
+    margin-top: 150px;
+}
+
+#service h1{
+    font-family: 'Lato';
+    color: var(--text);
+    font-size: 2.5em;
+    position: relative;
+    display: inline;
+    bottom: 70px;
+}
+
+#service h1:before{
+    content: "";
+    background-color: var(--buttonBlueClaire);
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    z-index: -1;
+}
+
+.cont-service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.element{
+    width: 350px;
+    border: 3px solid var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.element:hover:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -20px; right: -20px;
+    border: 4px solid var(--buttonBlue);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.element:after{
+    content: "";
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border: 0px solid var(--buttonBlue);
+    transition: all .5s;
+}
+
+.element i{
+    color: var(--buttonBlue);
+    font-size: 5em;
+    margin: 10px;
+}
+
+.element h2{
+    font-family: 'Martel Sans';
+    color: var(--text);
+    margin: 5px;
+}
+
+.element p{
+    font-family: 'Martel Sans';
+    color: var(--text);
+}
+
+.element button{
+    margin: 20px 0;
+    margin-top: 25px;
+    font-family: 'Martel Sans';
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: var(--buttonBlue);
+    border: 0;
+    color: var(--textButton);
+    cursor: pointer;
+}
+
+.reponseNewBtnDesign, .reponseNewBtnWeb, .reponseNewBtnUi{
+    display: none;
+}
+
+.close{
+    background-color: var(--buttonBlue);
+}
+
+.AvoirPlus1{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 11;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+}
+
+/* Fin Service */
+
+/* Réalisation */
+
+
+#container-realisation{
+    text-align: center;
+    margin-top: 200px;
+}
+
+#container-realisation h1{
+    font-family: 'Lato';
+    color: var(--text);
+    font-size: 2.5em;
+    position: relative;
+    display: inline;
+    bottom: 70px;
+}
+
+#container-realisation h1:before{
+    content: "";
+    background-color: var(--buttonBlueClaire);
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    z-index: -1;
+}
+
+.rea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.site {
+    width: 400px;
+    border-radius: 10px;
+    transition: all .3s;
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -ms-filter: grayscale(80%);
+    -o-filter: grayscale(80%);
+}
+
+.site:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    transform: translateY(-5px)
+}
+
+.image{
+    text-align: start;
+    cursor: pointer;
+}
+
+.image .exemple{
+    width: 400px;
+    color: var(--paragraphe);
+    font-family: 'Martel Sans';
+    text-align: justify;
+}
+
+.image .categorie{
+    width: 400px;
+    color: var(--text);
+    font-family: 'Martel Sans';
+}
+
+/* Fin Réalisation */
+
+/* Competence */
+
+#container-competence{
+    height: 100px;
+    margin: 150px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ligne{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.ligne .rect{
+    color: var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Martel Sans';
+    gap: 5px;
+}
+
+.ligne .rect i{
+    font-size: 50px;
+}
+
+/* Fin Competence */
+
+/* Contact */
+
+#container-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-contact h1{
+    font-family: 'Lato';
+    color: var(--text);
+    font-size: 2.5em;
+    position: relative;
+    display: inline;
+    margin-bottom: 50px;
+    left: 5px;
+}
+
+#container-contact h1:before{
+    content: "";
+    background-color: var(--buttonBlueClaire);
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    z-index: -1;
+}
+
+.contact{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    margin: 30px;
+    border-bottom: 2px solid var(--text);
+    padding: 10px;
+    width: 400px;
+}
+
+.input input{
+    color: var(--text);
+    background: none;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+.input input::placeholder{
+    color: var(--paragraphe);
+}
+
+.contact button{
+    font-size: 30px;
+    background: none;
+    outline: none;
+    border: 0;
+    color: var(--text);
+    margin: 5px;
+}
+
+.contact .send{
+    cursor: pointer;
+}
+
+/* Fin Contact */
+
+/* Footer */
+
+footer{
+    background-color: #2E318Fa5;
+    position: relative;
+}
+
+.copyright h5{
+    font-family: 'Martel Sans';
+    text-align: center;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.copyright .resau{
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Fin Footer */
+
+
+/* FAQ */
+
+#container-faq h1{
+    font-family: 'Lato';
+    color: var(--text);
+    font-size: 2.5em;
+    position: relative;
+    display: inline;
+    left: 5px;
+}
+
+#container-faq h1::before{
+    content: "";
+    background-color: var(--buttonBlueClaire);
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    z-index: -1;
+}
+
+#container-faq{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.faq{
+    font-family: 'Martel Sans';
+    text-align: start;
+    color: var(--text);
+    margin-top: 50px;
+}
+
+.reponse-question{
+    border-bottom: 2px solid var(--buttonBlue);
+    padding: 15px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.reponse{
+    display: none;
+}
+
+.arrow{
+    position: absolute;
+    opacity: 0;
+}
+
+.new{
+    display: block;
+    color: var(--paragraphe);
+}
+
+.reponse-question .flex-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.qrA{
+    background-color: var(--buttonBlueClaire);
+}
+
+.reponse-question .reponse{
+    margin-top: 10px;
+    transition: all .5s;
+}
+
+.flex-question .question{
+    font-size: 17px;
+}
+
+/* Fin FAQ */

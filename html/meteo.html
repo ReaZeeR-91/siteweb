@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReaZeeR | Météo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index2.html" class="txt">Accueil</a></li>
+            <li><a href="index2.html#container-propos" class="txt">Qui suis-je</a></li>
+            <li><a href="index2.html#container-realisation" class="txt">Projet</a></li>
+            <li><a href="#" class="txt">Contact</a></li>
+            <link rel="stylesheet" href="../css/meteo.css">
+        </ul>
+    </nav>
+
+    <section id="container">
+        <div id="contain">
+            <section id="container-image">
+                <div class="lieu">
+                    <h3 class="jour">~</h3>
+                    <h4 class="date">~</h4>
+                    <h5 class="ville"><i class="fa-solid fa-location-dot"></i>~</h5>
+                </div>
+                <i class="fa-solid fa-sun icon soleil" style="color: #bababa;"></i>
+                <i class="fa-solid fa-cloud icon nuage" style="color: #bababa;"></i>
+                <i class="fa-regular fa-snowflake icon neige" style="color: #bababa;"></i>
+                <i class="fa-solid fa-cloud-rain icon bruine" style="color: #bababa;"></i>
+                <i class="fa-solid fa-cloud-showers-heavy icon fortePluie" style="color: #bababa;"></i>
+                <i class="fa-solid fa-smog icon brume" style="color: #bababa;"></i>
+
+                <h2 class="temp">~°C</h2>
+                <h6 class="temps">~</h6>
+            
+            </section>
+            <div id="container-info">
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search" onclick="getValue();"></i></button>
+                    <input type="text" class="input-search"  placeholder="Recherche...">
+                </div>
+                <div class="information">
+                    <div class="flex-info">
+                        <i class="fa-solid fa-wind"></i>
+                        <h2 class="vent">~km/h</h2>
+                    </div>
+                    <div class="flex-info">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                        <h2 class="temp-max">~°C</h2>
+                    </div>
+                    <div class="flex-info">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                        <h2 class="temp-min">~°C</h2>
+                    </div>
+                </div>
+        </div>
+    </section>
+</body>
+<script src="../javascript/meteo.js"></script>
+</html>
