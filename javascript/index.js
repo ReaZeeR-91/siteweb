@@ -67,11 +67,11 @@ const morpionClick = document.querySelector(".morpion")
 const meteoClick = document.querySelector(".meteo")
 
 morpionClick.addEventListener('click', function() {
-    window.location.href = 'http://127.0.0.1:5500/html/morpion.html';
+    window.location.href = 'https://reazeer-91.github.io/siteweb/html/morpion.html';
 });
 
 meteoClick.addEventListener('click', function() {
-    window.location.href = 'http://127.0.0.1:5500/html/meteo.html';
+    window.location.href = 'https://reazeer-91.github.io/siteweb/html/meteo.html';
 });
 
 

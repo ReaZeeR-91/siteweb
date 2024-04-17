@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Martel Sans';
-    src: url("../font/MartelSans-Regular.ttf") format("truetype");
+    font-family: 'Reddit Mono';
+    src: url("../font/RedditMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -59,7 +59,7 @@ nav ul{
 }
 
 nav ul li a{
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     color: var(--textButton);
     font-size: 16px;
     position: relative;
@@ -127,7 +127,7 @@ nav ul li a:before{
 
 .button1{
     color: var(--background);
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     background-color: var(--buttonBlue);
     margin-top: 15px;
     border: 0;
@@ -190,7 +190,7 @@ nav ul li a:before{
 
 .paragraphe{
     color: var(--paragraphe);
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     font-size: 16px;
     text-align: justify;
 }
@@ -311,20 +311,20 @@ nav ul li a:before{
 }
 
 .element h2{
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     color: var(--text);
     margin: 5px;
 }
 
 .element p{
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     color: var(--text);
 }
 
 .element button{
     margin: 20px 0;
     margin-top: 25px;
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     font-size: 18px;
     padding: 5px 15px;
     border-radius: 5px;
@@ -421,14 +421,14 @@ nav ul li a:before{
 .image .exemple{
     width: 400px;
     color: var(--paragraphe);
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     text-align: justify;
 }
 
 .image .categorie{
     width: 400px;
     color: var(--text);
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
 }
 
 /* Fin Réalisation */
@@ -459,7 +459,7 @@ nav ul li a:before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     gap: 5px;
 }
 
@@ -550,7 +550,7 @@ footer{
 }
 
 .copyright h5{
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     text-align: center;
 }
 
@@ -602,7 +602,7 @@ footer .copyright{
 }
 
 .faq{
-    font-family: 'Martel Sans';
+    font-family: 'Reddit Mono';
     text-align: start;
     color: var(--text);
     margin-top: 50px;
