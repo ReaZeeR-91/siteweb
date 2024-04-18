@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Text Me One';
+    src: url("../font/TextMeOne-Regular.ttf") format("truetype");
+}
 
 @font-face {
     font-family: 'Lato';
@@ -7,12 +11,11 @@
 :root{
     --text: #fff;
     --background: #000417;
-    --paragraphe: #c1c1c1;
+    --paragraphe: #dcdcdc;
     --buttonBlue: #2E318F;
     --buttonBlueClaire: #2E318Fa5;
     --textButton: #fff;
     --fondChatNav: #0004177b;
-
 }
 
 
@@ -55,7 +58,7 @@ nav ul{
 }
 
 nav ul li a{
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     color: var(--textButton);
     font-size: 16px;
     position: relative;
@@ -123,7 +126,7 @@ nav ul li a:before{
 
 .button1{
     color: var(--background);
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     background-color: var(--buttonBlue);
     margin-top: 15px;
     border: 0;
@@ -186,8 +189,8 @@ nav ul li a:before{
 
 .paragraphe{
     color: var(--paragraphe);
-    font-family: 'Martel Sans';
-    font-size: 16px;
+    font-family: 'Text Me One';
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -307,20 +310,20 @@ nav ul li a:before{
 }
 
 .element h2{
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     color: var(--text);
     margin: 5px;
 }
 
 .element p{
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     color: var(--text);
 }
 
 .element button{
     margin: 20px 0;
     margin-top: 25px;
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     font-size: 18px;
     padding: 5px 15px;
     border-radius: 5px;
@@ -417,14 +420,15 @@ nav ul li a:before{
 .image .exemple{
     width: 400px;
     color: var(--paragraphe);
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     text-align: justify;
+    font-size: 17px;
 }
 
 .image .categorie{
     width: 400px;
     color: var(--text);
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
 }
 
 /* Fin Réalisation */
@@ -455,7 +459,7 @@ nav ul li a:before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     gap: 5px;
 }
 
@@ -546,7 +550,7 @@ footer{
 }
 
 .copyright h5{
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     text-align: center;
 }
 
@@ -598,7 +602,7 @@ footer .copyright{
 }
 
 .faq{
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     text-align: start;
     color: var(--text);
     margin-top: 50px;

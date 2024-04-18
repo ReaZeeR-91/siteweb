@@ -1,8 +1,11 @@
+@font-face {
+    font-family: 'Text Me One';
+    src: url("../font/TextMeOne-Regular.ttf") format("truetype");
+}
 
 :root{
     --text: #fff;
     --fondChatNav: #0004177b;
-
 }
 
 *{
@@ -14,10 +17,11 @@
 }
 
 body{
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     background-image: url("../src/background_meteo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 #container{
@@ -67,14 +71,12 @@ body{
 
 .lieu .jour{
     font-size: 25px;
-    margin-bottom: -15px;
     font-weight: 600;
 }
 
 .lieu .date{
     font-size: 15px;
     font-weight: 100;
-    margin-bottom: -5px;
 }
 
 .lieu .ville i{
@@ -89,7 +91,6 @@ body{
 
 .temp{
     font-size: 40px;
-    margin-bottom: -20px;
 }
 
 
@@ -149,7 +150,7 @@ body{
 }
 
 .flex-info h2{
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     font-size: 20px;
     font-weight: 100;
 }
@@ -188,7 +189,7 @@ nav ul{
 nav ul li a{
     color: var(--text);
     font-size: 16px;
-    font-family: 'Martel Sans';
+    font-family: 'Text Me One';
     position: relative;
     padding: 0 5px;
 }
@@ -230,6 +231,11 @@ nav ul li a:before{
 
 
 @media screen and (max-width: 1000px) {
+    body{
+        background-color: #000114;
+        background-image: none;
+    }
+
     nav ul{
         display: none;
     }
@@ -245,6 +251,20 @@ nav ul li a:before{
 
     #contain{
         width: 80%;
+    }
+
+    .navbarAjout{
+        position: fixed;
+        display: block;
+        top: 10%;
+        height: 80%;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+        animation: enter .5s;
     }
 
 }
