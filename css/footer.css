@@ -1,0 +1,237 @@
+/* CSS Document */
+
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+#wrap
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+    bottom: 0;
+    z-index: -1;
+}
+
+#lightings
+{
+	bottom: -60px;
+	position: absolute;
+	width: 100%;
+}
+
+.sect
+{
+	/*border-radius*/
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 20px;
+	width: 100%;
+	position: relative;
+	margin: auto;
+
+}
+
+#one
+{
+	/*animation*/
+	-webkit-animation: one 5s ease-in-out infinite alternate;
+	-moz-animation: one 5s ease-in-out infinite alternate;
+	-ms-animation: one 5s ease-in-out infinite alternate;
+	-o-animation: one 5s ease-in-out infinite alternate;
+	animation: one 5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes 
+one { from {
+-webkit-box-shadow: 0 0 250px 20px #FF6347;
+}
+
+to { -webkit-box-shadow: 0 0 100px 15px #00CED1; }
+}
+@-moz-keyframes 
+one { from {
+-moz-box-shadow: 0 0 250px 20px #FF6347;
+}
+
+to { -moz-box-shadow: 0 0 100px 15px #00CED1; }
+}
+@-o-keyframes 
+one { from {
+-o-box-shadow: 0 0 250px 20px #FF6347;
+}
+
+to { -o-box-shadow: 0 0 100px 15px #00CED1; }
+}
+
+@keyframes 
+one { from {
+box-shadow: 0 0 250px 20px #FF6347;
+}
+
+to {box-shadow: 0 0 100px 15px #00CED1; }
+}
+
+#two
+{
+	width: 90%;
+	/*animation*/
+	-webkit-animation: two 4s ease-in-out infinite alternate;
+	-moz-animation: two 4s ease-in-out infinite alternate;
+	-ms-animation: two 4s ease-in-out infinite alternate;
+	-o-animation: two 4s ease-in-out infinite alternate;
+	animation: two 4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes 
+two { from {
+-webkit-box-shadow: 0 0 250px 20px #8A2BE2;
+}
+
+to { -webkit-box-shadow: 0 0 100px 15px #FFD700; }
+}
+@-moz-keyframes 
+two { from {
+-moz-box-shadow: 0 0 250px 20px #8A2BE2;
+}
+
+to { -moz-box-shadow: 0 0 100px 15px #FFD700; }
+}
+@-o-keyframes 
+two { from {
+-o-box-shadow: 0 0 250px 20px #8A2BE2;
+}
+
+to { -o-box-shadow: 0 0 100px 15px #FFD700; }
+}
+
+@keyframes 
+two { from {
+box-shadow: 0 0 250px 20px #8A2BE2;
+}
+
+to { box-shadow: 0 0 100px 15px #FFD700; }
+}
+
+#three
+{
+	width: 80%;
+	/*animation*/
+	-webkit-animation: three 3s ease-in-out infinite alternate;
+	-moz-animation: three 3s ease-in-out infinite alternate;
+	-ms-animation: three 3s ease-in-out infinite alternate;
+	-o-animation: three 3s ease-in-out infinite alternate;
+	animation: three 3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes 
+three { from {
+-webkit-box-shadow: 0 0 250px 20px #00BFFF;
+}
+
+to { -webkit-box-shadow: 0 0 100px 15px #FFA500; }
+}
+@-moz-keyframes 
+three { from {
+-moz-box-shadow: 0 0 250px 20px #00BFFF;
+}
+
+to { -moz-box-shadow: 0 0 100px 15px #FFA500 }
+}
+@-o-keyframes 
+three { from {
+-o-box-shadow: 0 0 250px 20px #00BFFF;
+}
+
+to { -o-box-shadow: 0 0 100px 15px #FFA500 }
+}
+
+@keyframes 
+three { from {
+box-shadow: 0 0 250px 20px #00BFFF;
+}
+
+to { box-shadow: 0 0 100px 15px #FFA500 }
+}
+
+#four
+{
+	width: 70%;
+	/*animation*/
+	-webkit-animation: four 2s ease-in-out infinite alternate;
+	-moz-animation: four 2s ease-in-out infinite alternate;
+	-ms-animation: four 2s ease-in-out infinite alternate;
+	-o-animation: four 2s ease-in-out infinite alternate;
+	animation: four 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes 
+four { from {
+-webkit-box-shadow: 0 0 250px 20px #228B22;
+}
+
+to { -webkit-box-shadow: 0 0 100px 15px #9400D3; }
+}
+@-moz-keyframes 
+four { from {
+-moz-box-shadow: 0 0 250px 20px #228B22;
+}
+
+to { -moz-box-shadow: 0 0 100px 15px #9400D3; }
+}
+@-o-keyframes 
+four { from {
+-o-box-shadow: 0 0 250px 20px #228B22;
+}
+
+to { -o-box-shadow: 0 0 100px 15px #9400D3; }
+}
+
+@keyframes 
+four { from {
+shadow: 0 0 250px 20px #228B22;
+}
+
+to { shadow: 0 0 100px 15px #9400D3; }
+}
+
+#five
+{
+	width: 60%;
+	/*animation*/
+	-webkit-animation: five 1s ease-in-out infinite alternate;
+	-moz-animation: five 1s ease-in-out infinite alternate;
+	-ms-animation: five 1s ease-in-out infinite alternate;
+	-o-animation: five 1s ease-in-out infinite alternate;
+	animation: five 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes 
+five { from {
+-webkit-box-shadow: 0 0 250px 20px #20B2AA;
+}
+
+to { -webkit-box-shadow: 0 0 100px 15px #FF4500; }
+}
+@-moz-keyframes 
+five { from {
+-moz-box-shadow: 0 0 250px 20px #20B2AA;
+}
+
+to { -moz-box-shadow: 0 0 100px 15px #FF4500; }
+}
+@-o-keyframes 
+five { from {
+-o-box-shadow: 0 0 250px 20px #20B2AA;
+}
+
+to { -o-box-shadow: 0 0 100px 15px #FF4500; }
+}
+
+@keyframes 
+five { from {
+box-shadow: 0 0 250px 20px #20B2AA;
+}
+
+to { box-shadow: 0 0 100px 15px #FF4500; }
+}

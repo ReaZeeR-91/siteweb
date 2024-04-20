@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Text Me One';
+    src: url("../font/TextMeOne-Regular.ttf") format("truetype");
+}
+
+*{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000517;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-family: 'Text Me One';
+    margin-bottom: 50px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    display: flex;
+    width: 600px;
+    aspect-ratio: 1/1;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+.case{
+    width: 31%;
+    aspect-ratio: 1/1;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.case:nth-child(3n){
+    border-right: none;
+}
+
+.case:nth-child(3n +1){
+    border-left: none;
+}
+
+.case:nth-child(-n + 3){
+    border-top: none;
+}
+
+.case:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+
+svg{
+    width: 100%;
+    height: 100%;
+}
+
+/* Nav bar */
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Text Me One';
+    position: relative;
+    padding: 0 5px;
+}
+
+nav ul li a:hover:before{
+    width: 100%;
+}
+
+nav ul li a:before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    transition: all .3s;
+    border-radius: 10px;
+}
+
+.logo{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 80px;
+}
+/* Fin Nav bar */
