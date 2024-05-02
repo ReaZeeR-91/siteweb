@@ -88,32 +88,32 @@ to {box-shadow: 0 0 100px 15px #00CED1; }
 }
 @-webkit-keyframes 
 two { from {
--webkit-box-shadow: 0 0 250px 20px #8A2BE2;
+-webkit-box-shadow: 0 0 250px 20px #3100a3;
 }
 
-to { -webkit-box-shadow: 0 0 100px 15px #FFD700; }
+to { -webkit-box-shadow: 0 0 100px 15px #00ffcc; }
 }
 @-moz-keyframes 
 two { from {
--moz-box-shadow: 0 0 250px 20px #8A2BE2;
+-moz-box-shadow: 0 0 250px 20px #3100a3;
 }
 
-to { -moz-box-shadow: 0 0 100px 15px #FFD700; }
+to { -moz-box-shadow: 0 0 100px 15px #00ffcc; }
 }
 @-o-keyframes 
 two { from {
--o-box-shadow: 0 0 250px 20px #8A2BE2;
+-o-box-shadow: 0 0 250px 20px #3100a3;
 }
 
-to { -o-box-shadow: 0 0 100px 15px #FFD700; }
+to { -o-box-shadow: 0 0 100px 15px #00ffcc; }
 }
 
 @keyframes 
 two { from {
-box-shadow: 0 0 250px 20px #8A2BE2;
+box-shadow: 0 0 250px 20px #3100a3;
 }
 
-to { box-shadow: 0 0 100px 15px #FFD700; }
+to { box-shadow: 0 0 100px 15px #00ffcc; }
 }
 
 #three

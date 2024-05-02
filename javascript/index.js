@@ -87,14 +87,14 @@ switchThemeBtn.addEventListener('click', () => {
 
         document.documentElement.style.setProperty('--text', '#000517');
         document.documentElement.style.setProperty('--background', '#fff');
-        document.documentElement.style.setProperty('--paragraphe', '#383838');
+        document.documentElement.style.setProperty('--paragraphe', '#000000');
         toggleTheme++;
 
     } else {
 
         document.documentElement.style.setProperty('--text', '#fff');
         document.documentElement.style.setProperty('--background', '#000517');
-        document.documentElement.style.setProperty('--paragraphe', '#c1c1c1');
+        document.documentElement.style.setProperty('--paragraphe', '#fff');
         toggleTheme--;
 
     }

@@ -118,6 +118,7 @@ body{
     border: none;
     color: #fff;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .input-search{
